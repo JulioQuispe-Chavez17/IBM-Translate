@@ -36,15 +36,4 @@ public class TranslateService {
         }
 
 
-
-    public static void main(String[] args) throws IOException {
-
-            Translate prueba = new Translate();
-            prueba.setTranslate("The design of software architectures");
-            TranslateService service = new TranslateService();
-            var result = service.translate(prueba);
-            System.out.println(result);
-
-    }
-
     }
