@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  font-family: Garamond,verdana;
+}
+* {
+  transition: all 0.3s ease-out;
+}
+
+.container {
+  width: auto;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+}
+
+.card {
+  width: 460px;
+ background: white;
+ border-radius: 12px;
+ border: 0.1rem outset rgb(212, 212, 218);
+}
+
+
+.card:hover {
+  transform:scale(1);
+}
+
+.command {
+  display: flex;
+	flex-direction: column;
+  padding: 30px;
+  align-content: center;
+  justify-content: center;
+}
+
+.button {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+.area {
+  width:400px;
+  height:600px;
+  font-size: 11pt;
+  letter-spacing: 5px;
+  outline: none;
+  border-radius: 12px;
+  border: 0px white;
+}
+
+.spinner {
+  padding: 70px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: rgb(255, 255, 255);
+  }
+}
