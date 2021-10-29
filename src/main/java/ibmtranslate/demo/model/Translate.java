@@ -9,4 +9,7 @@ public class Translate {
     private @Getter
     @Setter
     String translate;
+    private @Getter
+    @Setter
+    String idioma;
 }
