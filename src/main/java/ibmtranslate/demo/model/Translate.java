@@ -11,5 +11,5 @@ public class Translate {
     String translate;
     private @Getter
     @Setter
-    String idioma;
+    String idiom;
 }

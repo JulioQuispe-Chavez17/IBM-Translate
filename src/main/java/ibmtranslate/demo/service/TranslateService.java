@@ -19,7 +19,7 @@ public class TranslateService {
     public TranslateOptions translateOptions(Translate translate){
         TranslateOptions translateOptions = new TranslateOptions.Builder()
                 .addText(translate.getTranslate())
-                .modelId(translate.getIdioma())
+                .modelId(translate.getIdiom())
                 .build();
         return translateOptions;
     }
