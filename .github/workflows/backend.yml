@@ -1,0 +1,20 @@
+name: Translate backend
+
+on:
+  push:
+   branches: [ backend ]
+  pull_request:
+    branches: [ backend ]
+      
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build & Push Image
+      run: |
+        echo "${{ secrets.DOCKERPWD }}" | docker login -u ${{ secrets.DOCKERUSU }} --password-stdin
+        docker image build -t plusultra2020/translate:v1 .
+        docker push plusultra2020/translate:v1
