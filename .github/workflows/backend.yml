@@ -37,6 +37,6 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Container image
         if: endsWith(github.ref, '/dev')
-        run: docker build -t ${{ secrets.DOCKER_REPO_BE }}:latest .
+        run: docker build -t ${{ secrets.DOCKER_REPO_BE }}:v1 .
       - name: Publish Docker image
-        run: docker push ${{ secrets.DOCKER_REPO_BE }}
+        run: docker push ${{ secrets.DOCKER_REPO_BE }}:v1
