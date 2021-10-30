@@ -15,7 +15,8 @@ export default function App() {
   const sendData = async() => {
     setLoading(true);
     axios.post('/translate/result', {
-      "translate": input
+      "translate": input,
+      "idioma": "es-en"
 
     }).then((response) => {
       setLoading(false);
