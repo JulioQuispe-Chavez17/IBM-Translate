@@ -24,6 +24,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build and test project with Maven
+        if: endsWith(github.ref, '/dev')
         run: mvn -B package --file pom.xml
   build-docker-image:
     name: Publish to Docker Hub
