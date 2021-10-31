@@ -9,6 +9,8 @@ import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 import ibmtranslate.demo.model.Translate;
 import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 
@@ -16,9 +18,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class TranslateService {
 
+
     public TranslateOptions translateOptions(Translate translate){
         TranslateOptions translateOptions = new TranslateOptions.Builder()
-                .addText(translate.getTranslate())
+                .addText(translate.getWords())
                 .modelId(translate.getIdiom())
                 .build();
         return translateOptions;
@@ -35,4 +38,5 @@ public class TranslateService {
         }
 
 
+    
     }
