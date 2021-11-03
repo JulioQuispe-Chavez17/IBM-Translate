@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: 'http://localhost:9095'
+    baseURL: 'https://ibm-translate.herokuapp.com/'
 })
 
 export default instance
