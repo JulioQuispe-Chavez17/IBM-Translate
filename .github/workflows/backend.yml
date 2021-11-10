@@ -1,4 +1,4 @@
-name: Container CI/CD
+name: Container V2 CI/CD
 
 on:
   push:
@@ -53,7 +53,7 @@ jobs:
 
       - name: Build and test project with Maven
         run: mvn -B package --file pom.xml
-        
+
   build-docker-image:
     name: Publish to Docker Hub
     runs-on: ubuntu-latest
