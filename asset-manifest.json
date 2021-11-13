@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/IBM-Translate/static/css/main.336e1742.chunk.css",
+    "main.js": "/IBM-Translate/static/js/main.9756ef95.chunk.js",
+    "main.js.map": "/IBM-Translate/static/js/main.9756ef95.chunk.js.map",
+    "runtime-main.js": "/IBM-Translate/static/js/runtime-main.94be4a91.js",
+    "runtime-main.js.map": "/IBM-Translate/static/js/runtime-main.94be4a91.js.map",
+    "static/js/2.6bca4abe.chunk.js": "/IBM-Translate/static/js/2.6bca4abe.chunk.js",
+    "static/js/2.6bca4abe.chunk.js.map": "/IBM-Translate/static/js/2.6bca4abe.chunk.js.map",
+    "index.html": "/IBM-Translate/index.html",
+    "static/css/main.336e1742.chunk.css.map": "/IBM-Translate/static/css/main.336e1742.chunk.css.map",
+    "static/js/2.6bca4abe.chunk.js.LICENSE.txt": "/IBM-Translate/static/js/2.6bca4abe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94be4a91.js",
+    "static/js/2.6bca4abe.chunk.js",
+    "static/css/main.336e1742.chunk.css",
+    "static/js/main.9756ef95.chunk.js"
+  ]
+}
